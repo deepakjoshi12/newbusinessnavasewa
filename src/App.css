@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+}
+:root {
+  --main-color-one: #1dbf73;
+  --main-color-one-rgb: 29, 191, 115;
+  --main-color-two: #47c8ed;
+  --main-color-three: #ff6b2c;
+  --heading-color: #333333;
+  --light-color: #666666;
+  --extra-light-color: #999999;
+  --heading-font: "Source Sans Pro", sans-serif;
+  --body-font: "Roboto", sans-serif;
+  --light-blue-color: #f1f6ff;
+}
+body {
+  font-family: var(--body-font);
+  color: var(--extra-light-color);  
+  background-color: #efefef;
+}
+
+h1 {
+  font-size: 4.5rem;
+  color: var(--heading-color);
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: var(--heading-color);
+}
+
+h3 {
+  font-size: 2.2rem;
+  color: var(--heading-color);
+}
+
+.main-container {
+  display: grid;
+  padding: 0px 15px;
+}
+
+.box {
+  background-color: #fff;
+  /* border: 1px solid #eee; */
+  padding: 10px;
+}
+.item-1{
+  padding:20px 20px;
+}
+.item-2 {
+  background: linear-gradient(90deg, #fdf7f0 0%, #ffe9f7 50%, #efdff4 100%);
+  text-align: center;
+  padding: 50px 0px;
+}
+
+.item-2 h3 {
+  color: var(--heading-color);
+}
+
+.item-3 {
+  /* background-color: var(--light-blue-color); */
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  padding: 50px 0px;
+}
+
+.service {
+  
+  min-height: 120px;
+  margin-bottom: 20px;
+  text-align: center;
+  padding:10px;
+  border: 1px olid #eee;
+  margin: 5px;
+  border-radius:10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: rgba(0, 0, 0, 0.14) 0px 1px 2px;
+}
+.service:hover {  
+  transform: translateY(-20px);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.service img {
+  width: 200px;
+  height: 120px;
+  border-radius: 10px;
+}
+
+.service h3{
+  font-size: 1.8rem;
+  color: var(--heading-color);
+  margin-top: 10px;
+  
+}
+
+
+.service1{
+  background-color: #FFFBF1;
+  
+}
+.service2{
+  background-color: #F4F5F7;
+}
+.service3{
+  background-color: #F3F2FF;
+}
+.service4{
+  background-color: #FFEBEF;
+}
+.service5{
+  background-color: #EEF7FC;
+}
+@media (max-width: 576px) {
+  .item-3 {
+    background-color: var(--light-blue-color);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0px;
+  }
+
+  .service {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .service img {
+    width: 100%;
+    height: auto;
+    border: 1px solid green;
+  }
+
+  .service h3{
+    font-size: 1.2rem;
+    color: var(--heading-color);
+  }
+}
+
+@media (max-width: 768px) {
+  .item-3 {
+    background-color: var(--light-blue-color);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0px;
+  }
+  .service {
+    width: 70%;
+    height: auto;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .service img {
+    width: 100%;
+    height: auto;
+    border: 1px solid green;
+  }
+  .service h3{
+    font-size: 1.4rem;
+    color: var(--heading-color);
+  }
+}
+
+.item-4{
+  padding: 50px 0px;
+}
+.item-4 h2{
+  margin-bottom: 10px;
+  text-align: center;
+}
+.form-container{
+  width: 50%;  
+  background-color: #F1F6FF;
+  margin: auto;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.14) 0px 1px 2px
+}
+
+.lbltxt{
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 10px;
+}
+.inputtxt{
+  width: 100%;
+  background-color: #fff;
+  padding: 10px 15px;
+  color: var(--light-color);
+  border: 1px solid #ccc;
+  font-size: 1.4rem;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+.inputtxt:focus{
+  background-color: #fff;
+  border: 1px solid #ccc;
+   
+    
+}
+
+.inputtxt:focus, input:focus{
+  outline: none;
+  border-color: 1px solid #719ECE;
+  box-shadow: 0 0 3px #719ECE;
+}
+
+.frmgrp{
+  margin-bottom: 10px;
+}
+
+.footer{
+  background-color: #292929;
+  padding: 50px 20px;
+  color: #fff;
+}
+
+.footer h3{
+  color: #fff;
+}
